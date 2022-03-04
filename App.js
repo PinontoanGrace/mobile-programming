@@ -1,6 +1,15 @@
 import React, {useState} from 'react';
 import {Text, Button, View, StyleSheet} from 'react-native';
 
+//[2.1] Props
+ const Name = props => {
+   return (
+     <View>
+       <Text>Hello, My name is {props.name}</Text>
+     </View>
+   );
+ };
+
 //[3] Styling
 const App = () => {
   return (
