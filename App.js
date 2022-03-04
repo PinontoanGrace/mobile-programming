@@ -9,6 +9,16 @@ import {Text, Button, View, StyleSheet} from 'react-native';
      </View>
    );
  };
+ const App = () => {
+   return (
+     <View>
+       <Name name="Matthew" />
+       <Name name="Geby" />
+       <Name name="Majesty" />
+       <Name name="Grace" />
+     </View>
+   );
+ };
 
 //[3] Styling
 const App = () => {
