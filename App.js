@@ -1,24 +1,25 @@
 import React, {useState} from 'react';
 import {Text, Button, View, StyleSheet} from 'react-native';
 
-//[2.1] Props
- const Name = props => {
-   return (
-     <View>
-       <Text>Hello, My name is {props.name}</Text>
-     </View>
-   );
- };
- const App = () => {
-   return (
-     <View>
-       <Name name="Matthew" />
-       <Name name="Geby" />
-       <Name name="Majesty" />
-       <Name name="Grace" />
-     </View>
-   );
- };
+//[2 . 1] Props in react native
+const Name = props => {
+ return (
+  <View>
+   <Text>Hello! My name is {props.name}</Text>
+  </View>
+ );
+};
+
+const App = () => {
+ return (
+   <View>
+     <Name name="Matthew" />
+     <Name name="Syalom" />
+     <Name name="Majesty" />
+     <Name name="Grace" />
+   </View>
+  );
+};
 
 //[3] Styling
 const App = () => {
