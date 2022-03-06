@@ -1,6 +1,11 @@
 import React, {useState} from 'react';
 import {Text, Button, View, StyleSheet} from 'react-native';
 
+//[1] Functional Component in react native
+ const App = () => {
+   return <Text>Hello, My name is John Doe</Text>;
+ };
+
 //[2 . 1] Props in react native
 const Name = props => {
  return (
