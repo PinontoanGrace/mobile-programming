@@ -26,6 +26,35 @@ const App = () => {
   );
 };
 
+//  [2.2] State
+ const Name = props => {
+   const [isFail, setIsFail] = useState(true);
+
+   return (
+     <View>
+       <Text>I am {props.name}, and I got C- on my exam</Text>
+       <Button
+         onPress={() => {
+           setIsFail(false);
+         }}
+         disabled={!isFail}
+         title={isFail ? 'You have to study harder' : 'Great Work'}
+       />
+     </View>
+   );
+ };
+
+ const App = () => {
+   return (
+     <>
+       <Name name="Matthew" />
+       <Name name="Geby" />
+       <Name name="Majesty" />
+       <Name name="Grace" />
+     </>
+   );
+};
+
 //[3] Styling
 const App = () => {
   return (
